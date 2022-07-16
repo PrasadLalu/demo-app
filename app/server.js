@@ -1,5 +1,8 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
+
+console.log(process.env.PORT);
 
 // Getting Request
 app.get('/', (req, res) => {
